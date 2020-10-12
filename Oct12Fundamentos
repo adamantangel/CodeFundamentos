@@ -1,0 +1,94 @@
+package asesoriasss;
+
+public class sumar {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+	
+			System.out.println("INICIANDO");
+			/*
+			
+			String second_string = "";
+			int numero_que_me_dan = 8;
+			
+			//Esta es nuestra pendiente.
+			for(int paso = 1; paso <= numero_que_me_dan; paso++) {
+				second_string = " " + second_string;
+			}
+			
+			String mi_cadena = "*";
+			System.out.println("La pendiente es de dos espacios.");
+			
+			
+			for(int i = 0; i < 5; i++) {
+				//System.out.println(i);
+				mi_cadena = second_string + mi_cadena;
+				System.out.println(mi_cadena);
+				
+			}
+			
+			
+			*/
+			
+			
+			/*
+			System.out.println("Trabajando con numeritos primos. wooo");
+		
+			//Vemos si un numero es primo
+			int la_respuesta_a_la_eterna_joventud = 0;
+			int mi_numero = 1208431;
+			int contador = mi_numero - 1;
+			boolean es_primo = true;
+			while(contador > 1) {
+				if(mi_numero % contador == 0) {
+					la_respuesta_a_la_eterna_joventud = contador;
+					es_primo = false;
+					break;
+				}
+				contador--;
+			}
+			
+			if(es_primo) {
+				System.out.println("Sigue siendo primo.");
+			}else {
+				System.out.println("No es primo por: "+la_respuesta_a_la_eterna_joventud);
+			}
+
+			*/
+			
+			
+
+			
+			int valor1, valor2;
+			valor1 = 4; 
+			valor2 = 200;
+			
+			System.out.println("Todos los numeros primos entre "+valor1+" y "+valor2);
+			
+			boolean primito;
+			int contador_de_primos = 0;
+			for(int x = valor1; x <= valor2; x++) {
+				//Queremos ver si x es un numero primo. En caso de que lo es, lo agregamos a mi_lista_de_numeritos.
+				primito = true;
+				
+				//ESTE FOR REVISA SI ES UN NUMERO PRIMO
+				for(int i = 2; i < x; i++) {
+					if(x % i == 0) {
+						primito = false;
+						break;
+					}
+				}//FIN DE PRIMO-REVISION
+				
+				
+				
+				if(primito) {//Solo entra en el if, si el numero es primo.
+					contador_de_primos ++;
+					System.out.println("El numero es: "+x);
+				}
+			}// FIN DE BUSQUEDA DE PRIMOS
+			System.out.println("Hay "+ contador_de_primos+" numeros primos.");
+
+	}//FIN DE MAIN
+
+
+}
