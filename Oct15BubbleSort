@@ -5,7 +5,7 @@ public class AppOct15 {
      */
     public static void main(String[] args) {
         // Queremos que sea ascendiente
-        int arreglo [] = {7, 5, 9, 2, 10,42,30,2,44,11}
+        int arreglo [] = {7, 5, 9, 2, 10,42,30,2,44,11};
         
         int aux;
         //Orden nlogn
@@ -19,11 +19,11 @@ public class AppOct15 {
                     arreglo[j] = aux;
                 }
             }//termina for dos
-        }
-        System.out.println(arreglo);
+        }//termina for uno
+    System.out.println(arreglo);
     imprimir(arreglo);
     rimirpmi(arreglo);
-//termina for uno
+
         /*  Bubble Sort
             Iteración uno:
             i=0; j=1 {5,7,9,2,10}
@@ -41,19 +41,21 @@ public class AppOct15 {
             i=3; j=4 {2,5,7,9,10}
         */
         
-    }
+    }//End main
     
     public static void imprimir(int lista []){
         System.out.print("El arreglo en orden ascendiente es: ");
         for(int z = 0 ; z < lista.length; z++){
             System.out.print(lista[z]+".");
         }
-        System.out.println();
-        
-    } 
+        System.out.println(); 
+    }//end imprimir 
+    
     public static void rimirpmi(int lista[]){
         System.out.print("El arreglo en orden descendiente es: ");
         for(int z = lista.length-1 ; z >= 0; z--){
             System.out.print(lista[z]+".");
         }
         System.out.println();
+   }//end rimirpmi
+}//end program
